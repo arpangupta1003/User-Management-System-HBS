@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/316894.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        a {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-image: url("https://images.unsplash.com/photo-1553702446-a39d6fbee6cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80");
+                background-size: 900px 900px;
+            }
+
+            a {
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Admin Login Page</h1>
+    </center>
+    <h4>{{message}}</h4>
+    <center>
+        <form action="" method="post">
+            <input type="text" placeholder="Enter Email" name="email">
+            <br><br>
+            <input type="password" placeholder="Enter Password" name="password">
+            <br><br>
+            <input type="submit" value="Login">
+        </form>
+        <br><br>
+        <a href="/admin/forget">Forget Password</a>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <style>
+        body {
+            background-image: url("https://media.istockphoto.com/id/1392248090/vector/dramatic-autumn-sky-stormy-clouds-in-dark-sky-background.jpg?s=612x612&w=0&k=20&c=JnzmXZ2xJac4_EeOcLgw7InKw3jN_xVLuojWINQv4dA=");
+            background-size: cover;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-image: url("https://media.istockphoto.com/id/1392248090/vector/dramatic-autumn-sky-stormy-clouds-in-dark-sky-background.jpg?s=612x612&w=0&k=20&c=JnzmXZ2xJac4_EeOcLgw7InKw3jN_xVLuojWINQv4dA=");
+                background-size: 900px 900px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2>This is the Admin Home Page</h2>
+    </center>
+    <center>
+        <h3>Welcome to Home Page, {{user.name}}</h3>
+
+        <h3>Your Details are :</h3>
+        <table border="2px solid black">
+            <tr>
+                <th>Name</th>
+                <td>{{user.name}}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{user.email}}</td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>{{user.pno}}</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <a href="/admin/Userlist">Dashboard</a>
+        <br>
+        <br>
+        <a href="/logout">logout</a>
+
+    </center>
+</body>
+
+</html>
