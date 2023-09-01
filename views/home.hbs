@@ -7,43 +7,92 @@
     <title>Home Page</title>
     <style>
         body {
-            background-image: url("https://images.unsplash.com/photo-1553702446-a39d6fbee6cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80");
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNYr9ePeahxV-0l85LzCdhDBo45gOt3w2dxg&usqp=CAU");
             background-size: cover;
             text-decoration: none;
         }
 
+        a {
+            text-decoration: none;
+                border: 1px solid wheat;
+                padding: 14px;
+                border-radius: 20px;
+                background-color: rgb(22, 114, 205);
+                color: white;
+                font-weight: 900;
+        }
+
+        .box {
+            border: 1px solid rgb(231, 233, 241);
+            border-radius: 2%;
+            align-items: center;
+            margin: 80px;
+            max-width: 30%;
+            height: 500px;
+            background-color: rgb(237, 238, 244);
+
+        }
+
         @media only screen and (max-width: 600px) {
             body {
-                background-image: url("https://images.unsplash.com/photo-1553702446-a39d6fbee6cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80");
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNYr9ePeahxV-0l85LzCdhDBo45gOt3w2dxg&usqp=CAU");
                 background-size: 900px 900px;
             }
 
+            a {
+                text-decoration: none;
+                border: 1px solid wheat;
+                padding: 14px;
+                border-radius: 20px;
+                background-color: rgb(22, 114, 205);
+                color: white;
+                font-weight: 900;
+            }
+
+            .box {
+                background-size: 900px 900px;
+                border: 1px solid rgb(231, 233, 241);
+                border-radius: 2%;
+                align-items: center;
+                margin: 80px;
+                max-width: 30%;
+                height: 500px;
+                background-color: rgb(237, 238, 244);
+
+            }
         }
     </style>
 </head>
 
 <body>
+    <h2 style="color: wheat; margin-left:30px; margin-top:20px;">Hello {{user.name}},</h2>
     <center>
-        <h3>Welcome to Home Page, {{user.name}}</h3>
+        <div class="box">
+            <h2 style="color: black;">Welcome to Home Page</h2>
 
-        <h3>Your Details are :</h3>
-        <table border="2px solid black">
-            <tr>
-                <th>Name</th>
-                <td>{{user.name}}</td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td>{{user.email}}</td>
-            </tr>
-            <tr>
-                <th>Phone Number</th>
-                <td>{{user.pno}}</td>
-            </tr>
-        </table>
-        <br>
-        <br>
-        <a href="/logout">logout</a>
+            <h3 style="color: black;">Your Details are :</h3>
+            <table border="2px solid black" style="border-radius: 10px;">
+                <tr style="padding: 20px;border-radius: 10px;">
+                    <th style="padding: 20px;">Name</th>
+                    <td style="padding: 20px;">{{user.name}}</td>
+                </tr>
+                <tr style="padding: 20px;">
+                    <th style="padding: 20px;">Email</th>
+                    <td style="padding: 20px;">{{user.email}}</td>
+                </tr>
+                <tr style="padding: 20px;">
+                    <th style="padding: 20px;">Phone Number</th>
+                    <td style="padding: 20px;">{{user.pno}}</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <a href="">Edit Information</a>
+            <br>
+            <br>
+            <br>
+            <a href="/logout">logout</a>
+        </div>
     </center>
 
 </body>
